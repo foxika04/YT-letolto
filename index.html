@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Videó Letöltő</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <div class="heading">
+            <h3>YT Videó Letöltő</h3>
+
+        <div class="main">
+            <h1>Youtube Videó Letöltő</h1>
+            <div class="input">
+                <input id="int" type="url" placeholder="URL">
+                <button id="btn" onclick="startVideo()">Start<i class="fa fa-arrow-right"
+                        aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="videoinfo" id="information">
+            <h3>Download MP3 or MP4</h3>
+            <div class="thumb">
+                <img id="myimg" class="mx-auto d-block" src=" ">
+            </div>
+            <div class="buttons">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Formats</th>
+                            <th>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.Mp3</td>
+                            <td><button class="btn-d" onclick="download()">Download <i class="fas fa-download"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>360p.Mp4</td>
+                            <td><button class="btn-d" onclick="download1()">Download <i class="fas fa-download"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>480p.Mp4</td>
+                            <td><button class="btn-d" onclick="download2()">Download <i class="fas fa-download"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
